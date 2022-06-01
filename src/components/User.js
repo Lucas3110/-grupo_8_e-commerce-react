@@ -9,8 +9,7 @@ const User = () => {
     useEffect(() => {
         fetch("http://localhost:3000/api/users")            
         .then(res => res.json())
-        .then(data => {
-            console.log(data);
+        .then(data => {           
             const userData = {
                 total: data.meta.count
             }

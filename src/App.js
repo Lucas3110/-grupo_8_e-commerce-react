@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 import Product from './components/Product';
-import Total from './components/LastProduct';
+import Last from './components/Last';
+import Collection from './components/Collection';
 import User from './components/User';
 
 
@@ -12,7 +13,8 @@ function App() {
         <main>
         <Product />
         <User />
-        <Total />
+        <Collection />
+        <Last />
         </main>        
       </header>
     </div>
