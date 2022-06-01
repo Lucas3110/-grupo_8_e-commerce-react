@@ -7,6 +7,7 @@ import '../styles.css'
 const Product = () => {
     const [product, setProduct] = useState([]);
     const [cantidad, setCantidad] = useState(null);
+    const [category, setCategory] = useState([]);
 
 
     useEffect(() => {
@@ -18,7 +19,9 @@ const Product = () => {
                 const productData = {
                     total: data.meta.count
                 }
-                setCantidad(productData)
+                setCantidad(productData) 
+                let count = data.meta.countByCategory
+                setCategory(count)
             })
     }, []);
 
@@ -42,6 +45,19 @@ const Product = () => {
                     <p>{"Cantidad total de productos: " + cantidad.total}</p>
                 ) : null}
             </div>
+
+
+            <h5>Cantidad por collección</h5>
+
+            <ul>
+                {
+                    category.length ? (
+
+                        category.map((item, index) => <li key={index}><p>{item.name}</p><p>{item.count}</p></li>)
+                    )
+                        : <li> No se encontraron productos </li>
+                }
+            </ul>
         </div>
     );
 
@@ -49,5 +65,3 @@ const Product = () => {
 
 
 export default Product;
-
-
