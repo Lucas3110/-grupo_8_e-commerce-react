@@ -21,18 +21,18 @@ const LastProduct = () => {
     }, []);
 
     return (
-        <div>
-            
-            <ul>
-                {
-                    product.length ? (
+        <div className="body">
+            <div className="container_product2">
+                <ul>
+                    {
+                        product.length ? (
 
-                        <p>{product}</p>
-                    )
-                        : <li> No se encontraron productos </li>
-                }
-            </ul>
-          
+                            <p className="product">{product}</p>
+                        )
+                            : <li className="product"> No se encontraron productos </li>
+                    }
+                </ul>
+            </div>
         </div>
     );
 

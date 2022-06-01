@@ -25,21 +25,23 @@ const Product = () => {
     return (
                 
         
-        <div>
-            <h3>Listado de Productos</h3>
+        <div className="body">
+            <h3 className="title">Listado de Productos</h3>
 
-            <ul>
+            <ul className="container_product">
                 {
                     product.length ? (
 
-                        product.map((item, index) => <li key={index}><p>{item.name}</p></li>)
+                        product.map((item, index) => <li className="product" key={index}><p>{item.name}</p></li>)
                     )
+
+                    
                         : <li> No se encontraron productos </li>
                 }
             </ul>
-            <div>
+            <div className="product_container">
                 {cantidad ? (
-                    <p>{"Cantidad total de productos: " + cantidad.total}</p>
+                    <p className="product2">{"Cantidad total de productos: " + cantidad.total}</p>
                 ) : null}
             </div>
         </div>

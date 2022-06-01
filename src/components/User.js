@@ -19,9 +19,9 @@ const User = () => {
 },[]);
 
     return (
-        <div>
+        <div className="container_users">
         {user ? (
-          <p>{"Cantidad total de usuarios: " + user.total}</p>          
+          <p className="users">{"Cantidad total de usuarios: " + user.total}</p>          
         ) : null}
       </div>
     );
