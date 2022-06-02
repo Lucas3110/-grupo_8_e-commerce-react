@@ -7,6 +7,7 @@ import '../styles.css'
 const Product = () => {
     const [product, setProduct] = useState([]);
     const [cantidad, setCantidad] = useState(null);
+    const [category, setCategory] = useState([]);
 
 
     useEffect(() => {
@@ -18,7 +19,9 @@ const Product = () => {
                 const productData = {
                     total: data.meta.count
                 }
-                setCantidad(productData)
+                setCantidad(productData) 
+                let count = data.meta.countByCategory
+                setCategory(count)
             })
     }, []);
 
@@ -27,6 +30,12 @@ const Product = () => {
         
         <div className="body">
             <h3 className="title">Listado de Productos</h3>
+
+            <div className="product_container">
+                {cantidad ? (
+                    <p className="product2">{"Cantidad total de productos: " + cantidad.total}</p>
+                ) : null}
+            </div>
 
             <ul className="container_product">
                 {
@@ -39,11 +48,22 @@ const Product = () => {
                         : <li> No se encontraron productos </li>
                 }
             </ul>
-            <div className="product_container">
-                {cantidad ? (
-                    <p className="product2">{"Cantidad total de productos: " + cantidad.total}</p>
-                ) : null}
-            </div>
+            
+
+
+            <h5 className="title_collection" >Cantidad por collección</h5>
+
+            <ul>
+                <div>
+                {
+                    category.length ? (
+
+                        category.map((item, index) => <li className="product5" key={index}><p>{item.name}</p><p>{item.count}</p></li>)
+                    )
+                        : <li> No se encontraron productos </li>
+                }
+                </div>
+            </ul>
         </div>
     );
 
@@ -51,5 +71,3 @@ const Product = () => {
 
 
 export default Product;
-
-

@@ -28,11 +28,9 @@ const Last = () => {
             <div>
 
                 {product ? (
-                <div>
-                    <h3>{"Ultimo producto creado: " + product.name}</h3>
-                        <p>{"Ultimo producto creado: " + product.description}</p>
-                        <p>{"Ultimo producto creado: " + product.price}</p>
-                </div>
+                    <div>
+                    <p className="product3">{"Ultimo producto creado: " + product.name}</p>               
+                    </div>
                 ) : null}
 
             </div>

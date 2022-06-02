@@ -23,9 +23,9 @@ const Collection = () => {
                 
         
         <div>                    
-            <div>
+            <div className="conatainer_product">
                 {cantidad ? (
-                    <p>{"Cantidad total de colecciones: " + cantidad.total}</p>
+                    <p className="product4">{"Cantidad total de colecciones: " + cantidad.total}</p>
                 ) : null}
             </div>
         </div>

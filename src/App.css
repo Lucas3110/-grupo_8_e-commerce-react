@@ -44,7 +44,7 @@
   margin: 0px;
   padding: 0px;  
   border: 0;  
-  box-sizing: border-box;
+  display: inline-block;
 }
 
 .ul{
@@ -60,32 +60,31 @@ align-items: center;
   font-size: 24px;
   color: white;
   text-decoration: white;
+  background-color: #1B262C;
 }
 
 .container_product{
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 300px;
     flex-wrap: wrap;
-    align-items: flex-end;
-    position: relative;
+    align-items: center;
     padding: 5px;
     text-decoration: none;
     border-radius: 10px;
     background-color: #0F4C75;
 }
 
-.container_product2{
-    width: 100%;
+.product_container{
+    width: 50%;
     flex-wrap: wrap;
     align-items: flex-end;
     position: relative;
-    padding: 5px;
     text-decoration: none;
     border-radius: 10px;
     background-color: #BBE1FA;
     align-items: center;
-    color: #0d1117;
+    color: white;
 }
 
 
@@ -108,6 +107,64 @@ align-items: center;
   background-color: #3282B8;
   border-radius: 10px;
 }
+
+.product2{
+  list-style: none;
+  justify-content: center;
+  padding: 0.5em;
+  border: 0.5em;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #0a5180;
+  border-radius: 10px;
+}
+
+.product3{
+  list-style: none;
+  justify-content: center;
+  padding: 0.5em;
+  border: 0.5em;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #0a5180;
+  border-radius: 10px;
+}
+
+.product4{
+  list-style: none;
+  justify-content: center;
+  padding: 0.5em;
+  border: 0.5em;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #0a5180;
+  border-radius: 10px;
+}
+
+.product5{
+  list-style: none;
+  justify-content: center;
+  width: 50%;
+  padding: 0.5em;
+  border: 0.5em;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #0a5180;
+  border-radius: 10px;
+}
+
+.title_collection{
+  align-items: flex-start;
+  width: 50%;
+  list-style: none;
+  padding: 0.5em;
+  border: 0.5em;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #0a5180;
+  border-radius: 10px;
+}
+
 
 .users{
   background-color: #7FB5FF;
