@@ -25,7 +25,7 @@ const Last = () => {
 
         <div>
 
-            <div>
+            <div className="dashboard-row">
 
                 {product ? (
                     <div>
