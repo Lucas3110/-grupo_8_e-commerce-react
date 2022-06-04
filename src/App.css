@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #18191A;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@ align-items: center;
   font-size: 24px;
   color: white;
   text-decoration: white;
-  background-color: #1B262C;
+  background-color: #18191A;
 }
 
 .container_product{
@@ -127,8 +127,11 @@ align-items: center;
   border: 0.5em;
   font-size: 18px;
   font-weight: bold;
-  background-color: #333;
+  background-color: #0a5180;
   border-radius: 10px;
+  max-width: 27rem;
+  left: 25%;
+  position: relative;
 }
 
 .product4{
@@ -138,8 +141,11 @@ align-items: center;
   border: 0.5em;
   font-size: 18px;
   font-weight: bold;
-  background-color: #333;
+  background-color: #0a5180;
   border-radius: 10px;
+  max-width: 27rem;
+  left: 25%;
+  position: relative;
 }
 
 .product5{
@@ -166,7 +172,7 @@ align-items: center;
 
 
 .users{
-  background-color: #333;
+  background-color: #0a5180;
   border-radius: 10px;
   list-style: none;
   justify-content: center;
@@ -174,6 +180,9 @@ align-items: center;
   border: 0.5em;
   font-size: 18px;
   font-weight: bold;
+  max-width: 27rem;
+  left: 25%;
+  position: relative;
 }
 
 .bigStacks {

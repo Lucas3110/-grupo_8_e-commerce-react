@@ -24,7 +24,7 @@ const Product = () => {
   return (
     <div>
       <div>
-        <h3 className="title">Listado de Productos</h3>
+        <h3 className="title">Dashboard Unforged</h3>
       </div>
       <div className="body">
         <div className="product_container">
