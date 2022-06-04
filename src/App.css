@@ -39,7 +39,7 @@
 }
 
 .body{
-  background-color: #0d1117;
+  background-color:  #18191A;
   font-family: 'Lato', sans-serif;
   margin: 0px;
   padding: 0px;  
@@ -73,7 +73,7 @@ align-items: center;
     padding: 5px;
     text-decoration: none;
     border-radius: 10px;
-    background-color: #0F4C75;
+    background-color: #333;
 }
 
 .product_container{
@@ -83,7 +83,7 @@ align-items: center;
     position: relative;
     text-decoration: none;
     border-radius: 10px;
-    background-color: #BBE1FA;
+    background-color: #333;
     align-items: center;
     color: white;
 }
@@ -127,7 +127,7 @@ align-items: center;
   border: 0.5em;
   font-size: 18px;
   font-weight: bold;
-  background-color: #0a5180;
+  background-color: #333;
   border-radius: 10px;
 }
 
@@ -138,7 +138,7 @@ align-items: center;
   border: 0.5em;
   font-size: 18px;
   font-weight: bold;
-  background-color: #0a5180;
+  background-color: #333;
   border-radius: 10px;
 }
 
@@ -150,8 +150,7 @@ align-items: center;
   border: 0.5em;
   font-size: 18px;
   font-weight: bold;
-  background-color: #f08000;
-  border-radius: 10px;
+  background-color: #333;
 }
 
 .title_collection{
@@ -163,12 +162,11 @@ align-items: center;
   font-size: 18px;
   font-weight: bold;
   background-color: #0a5180;
-  border-radius: 10px;
 }
 
 
 .users{
-  background-color: #7FB5FF;
+  background-color: #333;
   border-radius: 10px;
   list-style: none;
   justify-content: center;
@@ -179,5 +177,6 @@ align-items: center;
 }
 
 .bigStacks {
-  background-color: #3fdb61;
+  background-color: #18191A;
+  border-radius: 10px;
 }
