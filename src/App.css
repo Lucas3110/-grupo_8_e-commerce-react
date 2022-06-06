@@ -62,7 +62,7 @@ align-items: center;
   color: white;
   text-decoration: white;
   background-color: #18191A;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .container_product{
@@ -197,5 +197,5 @@ align-items: center;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
