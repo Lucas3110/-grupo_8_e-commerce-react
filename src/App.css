@@ -62,6 +62,7 @@ align-items: center;
   color: white;
   text-decoration: white;
   background-color: #18191A;
+  margin-bottom: 3rem;
 }
 
 .container_product{
@@ -130,7 +131,6 @@ align-items: center;
   background-color: #0a5180;
   border-radius: 10px;
   max-width: 27rem;
-  left: 25%;
   position: relative;
 }
 
@@ -144,7 +144,6 @@ align-items: center;
   background-color: #0a5180;
   border-radius: 10px;
   max-width: 27rem;
-  left: 25%;
   position: relative;
 }
 
@@ -157,6 +156,7 @@ align-items: center;
   font-size: 18px;
   font-weight: bold;
   background-color: #333;
+  border-radius: 10px;
 }
 
 .title_collection{
@@ -165,6 +165,7 @@ align-items: center;
   list-style: none;
   padding: 0.5em;
   border: 0.5em;
+  border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
   background-color: #0a5180;
@@ -181,11 +182,20 @@ align-items: center;
   font-size: 18px;
   font-weight: bold;
   max-width: 27rem;
-  left: 25%;
   position: relative;
 }
 
 .bigStacks {
-  background-color: #18191A;
+  background-color: #333;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.low-container{
+  background-color: #18191A;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-top: 4rem;
 }

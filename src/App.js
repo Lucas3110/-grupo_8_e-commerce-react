@@ -11,11 +11,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <main>
-        <Product />
-        <User />
-        <Collection />
-        <Last />
-        </main>        
+          <Product />
+          <div className='low-container'>
+            <User />
+            <Collection />
+            <Last />
+          </div>
+        </main>
       </header>
     </div>
   );
